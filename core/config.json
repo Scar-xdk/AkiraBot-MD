@@ -1,0 +1,8 @@
+{
+  "versao": "1.0.0",
+  "manutencao": false,
+  "nomeBot": "ZetsuBot",
+  "fotoMenuURL": "https://raw.githubusercontent.com/Scar-xdk/assets/main/menu.jpg",
+  "mensagemGlobal": "Bot atualizado com sucesso!",
+  "donos": ["5511912345678", "5511987654321"]
+}

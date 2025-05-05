@@ -1,0 +1,14 @@
+{
+  "name": "AkiraBot-MD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "bash ./start.sh"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.17.16",
+    "moment-timezone": "^0.5.48",
+    "node-fetch": "^3.3.2"
+  }
+}
