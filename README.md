@@ -2,7 +2,7 @@
 
  <h1 align="center">
  <p>
- <img src= "https://telegra.ph/file/9995a29f1d349be4495a0.jpg" alt="HUTAO-BOT V5.5✓" width="720">
+ <img src= "https://telegra.ph/file/IMG-20250505-WA0078.jpg" alt="HUTAO-BOT V5.5✓" width="720">
  </p>
  
  <p align="center">
