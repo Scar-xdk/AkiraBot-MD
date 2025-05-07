@@ -1,6 +1,6 @@
 <img src="https://readme-typing-svg.herokuapp.com/?font=mono&size=30&duration=4000&color=FF0000&center=false&vCenter=false&lines=𝑨𝒌𝒊𝒓𝒂𝑩𝒐𝒕-𝑴𝑫+V1.1✓;𝐁𝐎𝐓+𝐌𝐔𝐋𝐓𝐈+𝐃𝐄𝐕𝐈𝐂𝐄;✿✿✿✿"> 
 
-<img src="https://i.postimg.cc/mZm7fRQ5/IMG-20250507-WA0010.jpg" width="720">
+<img src="https://raw.githubusercontent.com/Scar-xdk/AkiraBot-MD/main/IMG-20250507-WA0010.jpg" width="720">
 
  <p align="center">
  <a href="#"><img title="BOT-MULTI-DEVICE" src="https://img.shields.io/badge/BOT•MULTI•DEVICE-blue?&style=for-the-badge"></a>
