@@ -1,46 +1,29 @@
+const fs = require("fs");
+const path = require("path");
+
 exports.execute = async (sock, msg) => {
-  const from = msg.key.remoteJid;
   const sender = msg.key.participant || msg.key.remoteJid;
-  const numero = sender.split("@")[0];
+  const numero = sender.replace(/[^0-9]/g, "");
 
-  const texto = `
- ╭─── 𝐶𝑟𝑖𝑎𝑑𝑜𝑟 ⚡───╮
- ╽ ✘ 𝐵𝑦 𝐷𝑎𝑟𝑘
- ╿
- ╿ ☕︎ 𝐵𝑜𝑡 𝑍𝑒𝑡𝑠𝑢𝐵𝑜𝑡
- ╽
- ╿☘︎ 5534998769175
- ╽
- ╿ ◡̈Chame se houver duvida!
- ╽
- ╰───────────╯
-`;
-
-  try {
-    for (let i = 0; i < 1; i++) {
-      await sock.relayMessage(from, {
-        requestPaymentMessage: {
-          currencyCodeIso4217: "BRL",
-          amount1000: "0",
-          requestFrom: sender,
-          noteMessage: {
-            extendedTextMessage: {
-              text: texto,
-              contextInfo: {
-                mentionedJid: [sender]
-              }
-            }
-          },
-          expiryTimestamp: "0"
-        }
-      }, {});
-    }
-  } catch (err) {
-    console.error(err);
-    await sock.sendMessage(from, {
-      text: "Erro ao enviar mensagem do criador.",
-      mentions: [sender]
+  const imagemPath = path.join(__dirname, "..", "assets", "menu.jpg");
+  if (!fs.existsSync(imagemPath)) {
+    await sock.sendMessage(msg.key.remoteJid, {
+      text: "Imagem não encontrada. Coloque 'menu.jpg' dentro da pasta /assets.",
     });
+    return;
   }
+
+  const texto = `*Você conhece o #xdk?*\nEle é o criador desse sistema inteiro que você está usando!
+
+*Em caso de dúvidas, fale com o criador:*
+wa.me/5534998769175 (XDK)
+
+⚠️ *Atenção:* Não é permitido vender este bot!`;
+
+  await sock.sendMessage(msg.key.remoteJid, {
+    image: { url: imagemPath },
+    caption: texto,
+    mentions: [sender],
+  });
 };
 

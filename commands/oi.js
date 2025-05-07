@@ -12,8 +12,7 @@ exports.execute = async (sock, msg, args) => {
   const participantes = metadata.participants.map(p => p.id);
 
   // Mensagem com crase para multi-linha
-  const aviso = args.length > 0 ? args.join(" ") : `Atenção Bot Novo na area!!
-  ZetsuBot # chegando em breve👾.`;
+  const aviso = args.length > 0 ? args.join(" ") : `Atencao! Bot Akira-MD em #Breve👾.`;
 
   try {
     for (let i = 0; i < 3; i++) {

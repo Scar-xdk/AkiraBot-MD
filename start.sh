@@ -1,30 +1,23 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Função para imprimir texto em vermelho
-print_red() {
-  echo -e "\e[1;31m$1\e[0m"
-}
-
-# ASCII Art de "AKUMA"
-akuma_banner="
- █████╗ ██╗  ██╗██╗   ██╗███╗   ███╗ █████╗     
-██╔══██╗██║ ██╔╝██║   ██║████╗ ████║██╔══██╗    
-███████║█████╔╝ ██║   ██║██╔████╔██║███████║    
-██╔══██║██╔═██╗ ██║   ██║██║╚██╔╝██║██╔══██║    
-██║  ██║██║  ██╗╚██████╔╝██║ ╚═╝ ██║██║  ██║    
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    
-"
-
+# Limpar a tela
 clear
 
-# Exibe o banner AKUMA
-print_red "$akuma_banner"
+# Arte ASCII do nome do bot
+echo -e "\e[31m
+        _     _  __  ___   ___     _           __  __   ___
+   /_\   | |/ / |_ _| | _ \   /_\    ___  |  \/  | |   \
+  / _ \  | ' <   | |  |   /  / _ \  |___| | |\/| | | |) |
+ /_/ \_\ |_|\_\ |___| |_|_\ /_/ \_\       |_|  |_| |___/
+\e[0m"
 
-# Informações do bot
+# Adicionar texto centralizado abaixo do nome
 echo ""
-echo -e "\e[1;35mCriador:\e[0m By Dark (5534998769175)"
-echo -e "\e[1;36mBot:\e[0m AkumaBot-MD"
-echo -e "\e[1;32mStatus:\e[0m Inicializando...\n"
+echo -e "\e[32mCriador: By Dark (5534998769175)"
+echo -e "\e[34mBot: AkiraBot-MD"
+echo -e "\e[33mBot Conectado com Sucesso!"
+echo ""
 
-# Iniciar o bot
-node .
+# Iniciar o bot com Node.js
+node index.js
+
